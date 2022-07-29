@@ -32,7 +32,7 @@ nav{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #333333;
+      background-color: var(--negro);
       font-family: 'Marcellus', serif;
       font-size: 1.3em;
       padding: 1rem;
@@ -54,6 +54,11 @@ nav{
 nav a{
       color: var(--blanco);
       text-decoration: none;  
+}
+
+nav a:hover{
+      background-color: #337AB7;
+      width: 100%;
 }
 
 .logo img{
@@ -323,3 +328,44 @@ nav a{
       justify-content: space-between;
       width: 50%;
 }
+
+/*resoluciòn tablet
+@media screen and (min-width: 768px){
+      .feature
+}*/
+
+/*Resolución notebooks*/
+@media screen and (min-width: 1024px){
+      
+      nav{
+          display: flex;
+          flex-direction: row; /*cambiamos la disposición de los elementos*/
+          width: 100%;
+          justify-content: space-between;
+          background-color: var(--negro2);
+      }
+      .logo{
+          padding: 1rem;
+      }
+      .logo img{
+          width: 100%;
+          max-width: 180px;       
+      }
+      .logo i{ /*ocultamos el ícono bars del menú hamburguesa*/
+          display: none;
+      } 
+      .menu{
+          background-color: var(--negro2);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      }
+      .menu-hr{ /*ocultamos la barra de división*/
+          display: none;
+      }
+      .navbar-button{
+          background-color:var(--azuloscuro);
+      }       
+  }
+   
+  
