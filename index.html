@@ -1,25 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
-    <title>Taller 0 Maquetacion Responsive</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/estilos.css">
+      <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hotelia (Taller 0)</title>
 </head>
 <body>
+
     <nav>
         <div class="logo">
-            <img src="img/Hotelia horizontal blanco.svg" alt="">
-            <i class="fa-solid fa-bars"></i>
+            <a href=""><img src="img/Hotelia horizontal blanco.svg"></a>
         </div>
         <div class="menu">
-            <a href="index.html" class="item">Inicio</a>
-            <a href="ubicanos.html" class="item">ubícanos</a>
-            <a href="opiniones.html" class="item">Opiniones</a>
-            <a href="#" class="item"><i class="fa-solid fa-user"></i>Iniciar sesión</a>
+            <a class="item" href="index.html">Inicio</a>
+            <a class="item" href="ubicacion.html">Ubícanos</a>
+            <a class="item" href="opiniones.html">Opiniones</a>
+            <a href="#" class="item2"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
         </div>
     </nav>
-    
+
+    <section class="fondo">  
+        <div class="slide">
+            <img src="img/index/slide1.jpg" id="imagen">
+            <div id="txt">
+                <p>Lorem ipsum dolor sir ameteliter, <br>consectetur adipiscing elit.</p>
+            </div> 
+        </div>  
+
+
+        <section class="inf">
+            <div class="contenidoInfo">
+                <div id="textoInf">
+                    <p>Estamos ubicados en el barrio La Cabrera al norte de Bogotá, en 
+                        un contexo de lujo donde interactúan los negocios, el ocio y el descanso, gracias
+                        a su estratégica ubicación rodeada de bancos , restaurantes de alta cocina, centros 
+                        comerciales, almacenes de lujo y amblemáticos parques para aprovechar la naturaleza 
+                        antre la ciudad caminar y hacer un poco de deporte al aire libre están 
+                        el parque del Virrey y El Parque de la 93. Además de nuestro exclusivo diseño,
+                        saludable a base de productos locales, cargados de lo mejor de la tradición colombiana.</p>
+                </div>
+                <div id="imgInf"><img src="img/Hotelia negro vertical.svg"></div>
+            </div>
+        </section>
+    </section>
+
+    <section id="features">
+        
+        <h1 class="features-title">Razones por las que disfrutarás quedarte con nosotros</h1>
+        <div class="features-description">
+
+            <div class="feature feature-blue">
+                <i class="fa-solid fa-bell-concierge"></i>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="feature feature-black">
+                <i class="fa-solid fa-bed"></i>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            <div class="feature feature-blue">
+                <i class="fa-solid fa-wifi"></i>
+                <p>Lorem ipsum </p>
+            </div>
+            <div class="feature feature-black">
+                <i class="fa-solid fa-dumbbell"></i>
+                <p>Lorem ipsum </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ubi">
+        <div class="tituloUbi"><h1>Ubícanos</h1></div>
+        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1217.0042570013009!2d-74.07685339049154!3d4.600487973222492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7147877c9%3A0x378b95e9cbda0740!2sCra.%208%20%2312a-42%2C%20Bogot%C3%A1!5e0!3m2!1sen!2sco!4v1658804876648!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="direccion"><h3>AVENIDA CARRERA 8, #12A-42, BOGOTA DC, COLOMBIA</h3><div class="azul"></div><h3><br>+57 601 4567899</h3></div>
+    </section>
+
+
+
+    <section class="calific">
+        <div class="titulo"><h1>Nuestros usuarios dicen...</h1></div>
+        <div class="cards">                    
+            <div id="op" >
+                    <div class="nombreP">
+                        <img src="data:image/jpeg;base64,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">
+                        <h5>Diego rodriguez</h5>
+                        
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                    
+                    </div>
+                    <div class="descripcion">                            
+                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                        Elit quis enim ultricies ullamcorper.
+                        Nunc aenean auctor vel diam dictum.</p>
+                    </div>
+            </div>
+            <div id="op">
+                <div class="nombreP">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG4bVZPqlnqwor-Gluzdl3Yb1VeO3yET3hfflqmAp_KZ5FMBYr5OU-Uu7Ue8buLeWAjTw&usqp=CAU">
+                    <h5>Diana Garcìa</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="descripcion">                            
+                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                        Elit quis enim ultricies ullamcorper.
+                        Nunc aenean auctor vel diam dictum.</p>
+                </div>
+            </div>
+            <div id="op">
+                <div class="nombreP">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7c9Xa4RPzmm8HXBPfWUmPqklStSFZVIiKDA&usqp=CAU"> 
+                    <h5>Diego rodriguez</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="descripcion">                            
+                    <p>Lorem ipsum dolor sit amet, consectet adipiscing elit.
+                        Elit quis enim ultricies ullamcorper.
+                        Nunc aenean auctor vel diam dictum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+            <div class="text-footer">
+                  <div class="texto t">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolores, necessitatibus impedit tempora nulla nemo?</p>
+                        <div class="redes">
+                              
+                              <i class="fa-brands fa-instagram"></i>     
+                              <i class="fa-brands fa-facebook-f"></i>
+                              <i class="fa-brands fa-twitter"></i>
+                              
+                             
+                              
+                        </div>
+                  </div>
+                  <div class="texto">
+                        <div class="iconos">
+                        <div>
+                               <i class="fa-solid fa-location-dot"></i><p>Avenida Carrera 8, #12A-42, Bogotá DC. Colombia</p>
+
+                         </div>
+                        
+                        <div>
+                              <i class="fa-solid fa-phone"></i><p>+57 601 4567899</p>
+                        </div>
+                        </div>
+                        
+                        
+                  </div>
+                  <div class="texto .t3">
+                        <div>
+                              <p>Políticas de privacidad</p>
+                        </div>
+                        <div id="separador">
+                              <p>Políticas de privacidad</p>
+                        </div>
+                        
+                  </div>
+            </div>
+
+          
+      </footer>
+
 </body>
 </html>
