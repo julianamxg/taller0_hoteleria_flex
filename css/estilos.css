@@ -55,13 +55,16 @@ nav a{
 }
 
 nav a:hover{
-      background-color: #337AB7;
+      color: var(--azuloscuro);
       width: 100%;
 }
 
 .logo img
 {
       height: 3rem;     
+}
+.logo i{
+      background-color: #000;
 }
 
 #txt p{
@@ -371,6 +374,9 @@ nav a:hover{
 /* Resoluciòn Movile*/
 @media screen and (min-width: 480px) and (max-width: 768px) 
 {
+      body{
+            margin: 0;
+      }
       .logo
       {
             background-color: var(--negro2);
@@ -393,7 +399,7 @@ nav a:hover{
       }
       .menu
       {
-            background-color: rgba(1, 10, 52, 0.838);
+            background-color: rgba(1, 10, 52, 0.63);
             display: flex;
             flex-direction: column;
             align-items: center;
