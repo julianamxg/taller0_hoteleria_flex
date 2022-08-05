@@ -12,7 +12,7 @@
   --blanco: #fff;
   --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
-@media screen and (min-width: 600px) and (max-width: 1680px){
+@media screen and (min-width: 600px) and (max-width: 2000px){
     body{
         height: 100vh;
         background-image: url(../img/registro/fondo.jpg);
@@ -239,7 +239,7 @@
     
     .container{
         position: unset;
-        width: 63vh;
+        width: 76vh;
         height: auto;
         border-radius: 1%;
         background-color: rgba(255, 255, 255, 0.74);

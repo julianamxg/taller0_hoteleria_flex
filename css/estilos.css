@@ -61,7 +61,7 @@ nav a:hover{
 
 .logo img
 {
-      height: 3rem;     
+      height: 4rem;     
 }
 .logo i{
       background-color: #000;
@@ -74,10 +74,16 @@ nav a:hover{
       color: white;
       width: 152%;
       text-align: left;
+      margin-left: -52%;
+    margin-bottom: -px;
       
       
 
+
+
 }
+
+
 
 #features
 {
@@ -366,13 +372,29 @@ nav a:hover{
 }
 
 
-@media screen and (min-width: 1025px) and (max-width: 1328px)
+@media screen and (min-width: 769px) 
 {
+      .logo i{
+            display: none;
+      }
+
+      .menu-hr{
+            display: none;
+      }
+
+      .texto3 hr{
+            display: none;
+      }
+
+      .texto4 hr{
+            display: none;
+      }
+
       
 }
 
 /* Resoluciòn Movile*/
-@media screen and (min-width: 480px) and (max-width: 768px) 
+@media screen and (min-width: 320px) and (max-width: 768px) 
 {
       body{
             margin: 0;
