@@ -161,13 +161,23 @@
         width: 23%;
         padding: 0.9%;
         border-radius: 2px;
-        font-size: 1em;
-        color: white;
+       
         background-color: #272727;
         border: none;
         font-family: 'Marcellus', serif;
         cursor: pointer;
     }
+
+    .termino2:active{
+        background-color: #6698c4;
+    }
+
+ .boton2 a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+    }
+
 
     .terminos{
       display: none;
@@ -339,6 +349,11 @@
         border: none;
         font-family: 'Marcellus', serif;
         cursor: pointer;
+    }
+
+    .boton a{
+        text-decoration: none;
+        color: white;
     }
 
     .terminos2{
