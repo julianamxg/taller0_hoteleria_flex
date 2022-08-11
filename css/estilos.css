@@ -38,6 +38,14 @@ nav{
       padding: 1rem;
 }
 
+/*.outside{
+      transform: translateY(-100em);
+      
+}
+
+.open{
+      transform: translateX(0);
+}*/
 
 .item{
       padding: 1rem;
