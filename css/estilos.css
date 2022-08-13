@@ -70,6 +70,7 @@ nav a:hover{
 }
 
 
+
 .logo img{
       height: 4rem;     
 }
@@ -519,9 +520,10 @@ i.fas.fa-star.roja{
             transition: .5s ease;  
       }
 
-
-      nav:hover .menu{
+      .menu.active
+      {
             display: flex;
+            transform: translateY(0%);
       }
 
 

@@ -92,12 +92,23 @@ nav a:hover {
     font-family: 'Marcellus', serif;
     color: var(--blanco);
 }
- 
-#banner{ 
-    min-height: 400px;
+
+#txt{
+    font-family: 'roboto', sans-serif;
+    font-size: 3rem;
+    background-color: rgba(0,0,0,0.35);
+    color: white;
+    width:auto;
+    text-align: left;
+    margin-left: -22%;
+    margin-right: -22%;
+    margin-bottom: -3%;   
+}
   
-   
-    
+
+#txt p{
+    margin: 2rem;
+    padding-bottom: 1rem;
 }
 
 #descripcion{
@@ -129,6 +140,7 @@ nav a:hover {
     width: 65%;
     height: 65%;
 }
+
 
 #features{
     background: url(../img/index/bg-features.png);
@@ -174,19 +186,21 @@ nav a:hover {
     margin-bottom: 1.5rem;
 }
 
+
 .feature p{
     text-align: center;
 }
+
 
 .feature-blue{
     background-color: rgba(9, 53, 104, 0.63);
 }
 
 
-.feature-black
-{
+.feature-black{
     background-color: rgba(0, 0, 0, 0.719);
 }
+
 
 .ubicanos h1{
    text-align: center;
@@ -206,15 +220,15 @@ nav a:hover {
     width: 100%;
 }
 
+
 .direccion h3{
     color: var(--negro2);
     font-size: 1.7em;
     display: grid;
     justify-items: center;
     font-weight: 200;
-   
-    
 }
+
 
 .linea{
     display: grid;
@@ -228,6 +242,7 @@ nav a:hover {
     
 }
 
+
 .titulo{
     display: grid;
     justify-items: center;
@@ -238,7 +253,6 @@ nav a:hover {
     font-size: 2em;
     margin-top: 3rem;
 }
-
 
 
 .titulo h1{
@@ -256,13 +270,11 @@ nav a:hover {
     display: grid;
     grid-template-rows: 50%;
     grid-auto-flow: column;
-   
     grid-column-gap: 3em;
     margin-top: -2%;
     margin-right: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
-   
 }
 
 
@@ -277,7 +289,6 @@ nav a:hover {
 
 
 .nombreP h5{
-     
     padding-top: 2.2rem;
     font-size: 1.5rem;
 }
@@ -333,7 +344,6 @@ i.fas.fa-star.roja{
 .footer{
     background-color: #1f1e1e;
     display: grid;
-    
     color: white;
     padding: 2%;
     margin-top: 13rem;
@@ -359,9 +369,11 @@ i.fas.fa-star.roja{
     margin-left: 1rem;
 }
 
+
 .texto3-footer{
     margin-left: 3rem;
 }
+
 
 .texto2-footer{
     width: 80%;
@@ -391,64 +403,54 @@ i.fas.fa-star.roja{
    
 }
 
+
 .texto1-footer hr{
-            display: none;
-      }
+    display: none;
+}
 
-      .texto2-footer hr{
-            display: none;
-      }
 
-      #txt{
-        font-family: 'roboto', sans-serif;
-        font-size: 3rem;
-        background-color: rgba(0,0,0,0.35);
-        color: white;
-        width:auto;
-        text-align: left;
-        margin-left: -22%;
-      margin-right: -22%;
-      margin-bottom: -3%;
-       
-  }
-  
-  
-  #txt p{
-        margin: 2rem;
-        padding-bottom: 1rem;
-        
-  }
+.texto2-footer hr{
+    display: none;
+}
 
-  .carousel {
+
+
+
+
+.carousel {
     position: relative;
 }
   
 
-
-
-
-
 /*Resolución tabletas*/
 @media screen and (min-width:768px) {
-    banner h1{
-        font-size: 2em;
-    }.mapa iframe{
-        width: 90%;
-    }#ubicacion{
-        padding: 0%;
-    }
 
 }
 
+/*Mobile*/
 @media screen and (min-width: 200px) and (max-width: 768px) {
+  .menu{
+        display: none;
+        width: 100%;
+        transition: .5s ease;  
+  }
+
+  .menu.active
+  {
+        display: grid;
+        transform: translateY(0%);
+  }
+
     #banner{
         display: grid;
         grid-template-columns: 800px;
     }
 
+
     #imgInf img{
        display: none;
     }
+
 
     #descripcion{
         width: 100%;
@@ -458,8 +460,8 @@ i.fas.fa-star.roja{
         margin-top: -12rem; 
     }
     
+
     .contenidoInfo{
-      
         margin: 1rem;
         display: grid;
         grid-template-columns: 108%;
@@ -474,17 +476,18 @@ i.fas.fa-star.roja{
         padding-right:-11rem;
     }
 
+
     #banner{
         display: grid;
         grid-template-columns: auto;
     }
+
 
     #features{
         background: url(../img/index/bg-features.png);
         color: white;
         padding-top: 1rem;
     }
-    
     
     
     .features-title{
@@ -495,7 +498,6 @@ i.fas.fa-star.roja{
     }
     
     
-    
     .features-description {
         display: grid;
         grid-template-columns:auto;
@@ -503,93 +505,92 @@ i.fas.fa-star.roja{
         grid-column-gap: 4.5em;
     }
     
+
    .cards{
-    display: none;
+        display: none;
    }
 
+
    .carruselOp.carousel{
-    width: 30%;
-}
+        width: 30%;
+    }
 
 
-.carruselOp{
-    margin: 1.3rem;
-    margin-top: -14em;
-    display: grid;
-    align-items: center;
-}
+    .carruselOp{
+        margin: 1.3rem;
+        margin-top: -14em;
+        display: grid;
+        align-items: center;
+    }
 
-.nombreP img{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    overflow: hidden;
-    margin-right: 5%;
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.titulo{
-    display: grid;
-    justify-items: center;
-    background-color: #1f1e1e;
-    align-items: center;
-    color: white;
-    height: 4em;
-    font-size: 2em;
-    margin-top: 3rem;
-}
+    .nombreP img{
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        margin-right: 5%;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
 
 
-
-.titulo h1{
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-.direccion h3{
-    color: var(--negro2);
-    font-size: 1.2em;
-    display: grid;
-    text-align: center;
-    font-weight: 200;
-   
-    
-}
-
-.footer{
-    background-color: #1f1e1e;
-    display: grid;
-    
-    color: white;
-    padding: 2%;
-    margin-top: 3rem;
-}
+    .titulo{
+        display: grid;
+        justify-items: center;
+        background-color: #1f1e1e;
+        align-items: center;
+        color: white;
+        height: 4em;
+        font-size: 2em;
+        margin-top: 3rem;
+    }
 
 
-.footer .text-footer{
-    display: grid;
-    grid-template-columns: auto;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    align-items: center;
-    font-size: 1.2em;
-    height: 100%;
-    width: 100%;
-    font-family: 'Marcellus', serif;
-}
-
-.text-footer .hr  {
-    display: grid;
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    border-top: 1px solid;
-    opacity: .25;
-}
+    .titulo h1{
+        font-size: 2rem;
+        font-weight: 300;
+    }
 
 
+    .direccion h3{
+        color: var(--negro2);
+        font-size: 1.2em;
+        display: grid;
+        text-align: center;
+        font-weight: 200;
+    }
+
+
+    .footer{
+        background-color: #1f1e1e;
+        display: grid;
+        color: white;
+        padding: 2%;
+        margin-top: 3rem;
+    }
+
+
+    .footer .text-footer{
+        display: grid;
+        grid-template-columns: auto;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        align-items: center;
+        font-size: 1.2em;
+        height: 100%;
+        width: 100%;
+        font-family: 'Marcellus', serif;
+    }
+
+    .text-footer .hr  {
+        display: grid;
+        margin: 1rem 0;
+        color: inherit;
+        border: 0;
+        border-top: 1px solid;
+        opacity: .25;
+    }
 
 }
 
@@ -606,62 +607,70 @@ i.fas.fa-star.roja{
             "opinion" auto
             "footer" auto
     }
-    
+
+
     nav{
         background-color: var(--negro2);
         grid-template-columns: 200px auto;
         grid-template-areas: 
         "logo menu";
-}
+    }
 
-#banner{
-    display: grid;
-    grid-template-columns: auto;
-}
+    #banner{
+        display: grid;
+        grid-template-columns: auto;
+    }
 
-.logo img{
-    width: 100%;
- }
- .logo i{
-    display: none;
- }
+
+    .logo img{
+        width: 100%;
+    }
+
+
+    .logo i{
+        display: none;
+    }
  
- .menu{
-    background-color: var(--negro2);
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-self: end;
-}
 
-.menu-hr{
-    display: none;
-}
+    .menu{
+        background-color: var(--negro2);
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-self: end;
+    }
 
-.item {
-    margin: 0 1rem;
-    align-self: center;
-}
+
+    .menu-hr{
+        display: none;
+    }
+
+
+    .item {
+        margin: 0 1rem;
+        align-self: center;
+    }
+
+
+    nav a {
+        text-align: left;
+    }
  
-nav a {
-    text-align: left;
-}
- 
-nav a:hover {
-    background-color: transparent;
-    color: var(--azuloscuro);
-}
- 
-.navbar-button {
-    background-color: var(--azuloscuro);
-    align-self: center;
-}
 
-.carruselOp{
-    display: none;
-}
+    nav a:hover {
+        background-color: transparent;
+        color: var(--azuloscuro);
+    }
 
 
+    .navbar-button {
+        background-color: var(--azuloscuro);
+        align-self: center;
+    }
 
+
+    .carruselOp{
+        display: none;
+    }
 
 }
 
